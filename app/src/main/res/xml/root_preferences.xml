@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/settings_header">
+        <ListPreference
+            app:defaultValue="1"
+            app:key="SHADE_AMOUNT"
+            app:title="Background Shade Intensity"
+            app:entries="@array/shade_amount"
+            app:entryValues="@array/shade_values"/>
+
+        <ListPreference
+            app:defaultValue="1"
+            app:key="PAN_SPEED"
+            app:title="Camera Pan Speed"
+            app:entries="@array/pan_amount"
+            app:entryValues="@array/pan_values"/>
+
+        <ListPreference
+            app:defaultValue="1"
+            app:key="CLOUD_AMOUNT"
+            app:title="Number of Clouds"
+            app:entries="@array/cloud_amount"
+            app:entryValues="@array/cloud_values"/>
+
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:key="TRANSPARENT_CLOUDS"
+            app:title="Transparent Clouds"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
